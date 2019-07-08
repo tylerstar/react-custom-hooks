@@ -4,7 +4,9 @@ export const useSignUpForm = (initialState, callback) => {
   const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
-      callback();
+      if (callback) {
+        callback();
+      }
     }
   };
 
