@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 export const useSignUpForm = (initialState, callback) => {
   const [inputs, setInputs] = useState(initialState);
 
